@@ -1,0 +1,61 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortner</title><!-- stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- start header section  -->
+    <header class="header-area">
+        <div class="header">
+        </div>
+    </header>
+    <!-- end header section  -->
+    <!-- start main section  -->
+    <main>
+        <section >
+          <div class="main-aria">
+            <div class="main">
+              <div class="main-inputs">
+                <label for="short-link" class="label">Write Long URL</label>
+                <div>
+                  <input type="text" id="long-url" class="main-input"/>
+                  <input type="button" value="Generate Short URL" class="generate-button" id="generate-short">
+                </div>
+                <div class="output">
+                  <p class="output-title">Your Short URL is: </p>
+                  <input type="text" class="output-field" id="long-result" readonly>
+                  <button class="copy-button" onclick="copyShortUrl()">copy</button>
+                </div>
+              </div>
+              <div class="main-inputs">
+                <label for="long-link" class="label">Write Short URL</label>
+                <div>
+                  <input type="text" id="short-url" class="main-input" />
+                  <input type="button" value="Generate Long URL" class="generate-button" id="generate-long">
+                </div>
+                <div class="output">
+                  <p class="output-title">Your Original URL is: </p>
+                  <input type="text" class="output-field" id="short-result" readonly>
+                  <button class="copy-button" onclick="copyOriginalUrl()">copy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    
+    <!-- start footer section  -->
+    <footer>
+         
+    </footer>
+    <!-- end footer section  -->
+    <!-- Script -->
+    <script src="JS/app.js"></script>
+</body>
+</html>
